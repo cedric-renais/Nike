@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/***************************/
+/******* FONT-FACES ********/
+/***************************/
+/** Montserrat & Palaquin **/
+/***************************/
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 100 900;
+  src: url('/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Palaquin';
+  font-weight: 600;
+  src: url('/assets/fonts/palaquin/Palanquin-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Palaquin';
+  font-weight: 700;
+  src: url('/assets/fonts/palaquin/Palanquin-Bold.ttf') format('truetype');
+}
+
+/*****************/
+/** BASE STYLES **/
+/*****************/
+
+@layer base {
+  * {
+    @apply m-0 box-border p-0;
+  }
+
+  html {
+    @apply scroll-smooth bg-white;
+  }
+}
+
+/***********************/
+/** COMPONENTS STYLES **/
+/***********************/
+
+@layer components {
+  .max__wrapper {
+    @apply mx-auto max-w-[1440px];
+  }
+}
+
+/**********************/
+/** UTILITIES STYLES **/
+/**********************/
+
+@layer utilities {
+  .flex__center {
+    @apply flex items-center justify-center;
+  }
+
+  .padding__x {
+    @apply px-8 sm:px-16;
+  }
+
+  .padding__y {
+    @apply py-12 sm:py-24;
+  }
+
+  .padding__l {
+    @apply pl-8 sm:pl-16;
+  }
+
+  .padding__r {
+    @apply pr-8 sm:pr-16;
+  }
+
+  .padding__t {
+    @apply pt-12 sm:pt-24;
+  }
+
+  .padding__b {
+    @apply pb-12 sm:pb-24;
+  }
+}
