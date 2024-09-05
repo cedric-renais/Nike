@@ -37,7 +37,7 @@
   }
 
   html {
-    @apply scroll-smooth bg-white;
+    @apply scroll-smooth bg-white text-black;
   }
 }
 
@@ -48,6 +48,10 @@
 @layer components {
   .max__wrapper {
     @apply mx-auto max-w-[1440px];
+  }
+
+  .button__red {
+    @apply border-accent bg-accent text-white outline-offset-8 outline-accent transition-colors hover:bg-white hover:text-accent;
   }
 }
 

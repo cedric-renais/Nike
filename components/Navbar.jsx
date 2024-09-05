@@ -1,8 +1,8 @@
 'use client';
 
 import { navLinks } from '@constants';
-import { Close, Hamburger } from '@public/assets/icons';
-import { LogoRed } from '@public/assets/images';
+import { close, hamburger } from '@public/assets/icons';
+import { logoRed } from '@public/assets/images';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -23,7 +23,7 @@ const Navbar = () => {
       <nav className="max__wrapper flex items-center justify-between">
         <Link className="rounded-md outline-offset-8 outline-accent" href="/">
           <Image
-            src={LogoRed}
+            src={logoRed}
             alt="Nike, Accueil."
             width={104}
             height={40}
@@ -51,9 +51,9 @@ const Navbar = () => {
         >
           <span className="sr-only">Menu</span>
           {isMenuOpen ? (
-            <Image src={Close} alt="" width={40} height={40} />
+            <Image src={close} alt="" width={40} height={40} />
           ) : (
-            <Image src={Hamburger} alt="" width={40} height={40} />
+            <Image src={hamburger} alt="" width={40} height={40} />
           )}
         </button>
         {isMenuOpen && (
