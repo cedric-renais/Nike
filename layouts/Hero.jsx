@@ -52,7 +52,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="flex__center relative flex-1 bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
+        <div className="flex__center relative flex-1 max-xl:py-40 xl:min-h-screen">
           <Image
             className="relative z-10 mb-10 object-contain"
             src={bigShoeImage}

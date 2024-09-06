@@ -1,5 +1,6 @@
 import { Navbar } from '@components';
 import {
+  CustomerReviews,
   Hero,
   PopularProducts,
   Services,
@@ -16,6 +17,7 @@ const Home = () => {
       <SuperQuality />
       <Services />
       <SpecialOffer />
+      <CustomerReviews />
     </>
   );
 };

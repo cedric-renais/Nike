@@ -3,6 +3,8 @@ import {
   bigShoe1,
   bigShoe2,
   bigShoe3,
+  customer1,
+  customer2,
   shoe1,
   shoe2,
   shoe3,
@@ -91,5 +93,22 @@ export const services = [
     imgURL: support,
     title: 'Nous adorons vous aider',
     subtext: 'Notre équipe dévouée est là pour vous assister à chaque étape.',
+  },
+];
+
+export const reviews = [
+  {
+    imgURL: customer1,
+    customerName: 'Antoine Dubois',
+    rating: 4.5,
+    feedback:
+      'L’attention portée aux détails et la qualité du produit ont dépassé mes attentes. Je recommande vivement !',
+  },
+  {
+    imgURL: customer2,
+    customerName: 'Claire Lefèvre',
+    rating: 4.9,
+    feedback:
+      'Le produit a non seulement répondu, mais a dépassé mes attentes. Je serai certainement une cliente fidèle !',
   },
 ];

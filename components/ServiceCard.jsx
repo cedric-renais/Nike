@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const ServiceCard = ({ imgURL, title, subtext }) => {
   return (
-    <div className="w-full flex-1 rounded-[30px] bg-thumbnail bg-cover bg-no-repeat px-10 py-16 shadow-lg sm:min-w-[350px]">
+    <div className="w-full flex-1 rounded-[30px] bg-thumbnail bg-cover px-10 py-16 shadow-lg sm:min-w-[350px]">
       <div className="flex__center h-11 w-11 rounded-full bg-accent">
         <Image src={imgURL} alt="" width={24} height={24} />
       </div>
