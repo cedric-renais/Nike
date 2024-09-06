@@ -1,4 +1,4 @@
-import { Navbar } from '@components';
+import { Footer, Navbar } from '@components';
 import {
   CustomerReviews,
   Hero,
@@ -20,6 +20,7 @@ const Home = () => {
       <SpecialOffer />
       <CustomerReviews />
       <Subscribe />
+      <Footer />
     </>
   );
 };

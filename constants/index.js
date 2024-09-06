@@ -1,4 +1,11 @@
-import { shield, support, truck } from '@public/assets/icons';
+import {
+  facebook,
+  instagram,
+  shield,
+  support,
+  truck,
+  twitter,
+} from '@public/assets/icons';
 import {
   bigShoe1,
   bigShoe2,
@@ -110,5 +117,41 @@ export const reviews = [
     rating: 4.9,
     feedback:
       'Le produit a non seulement répondu, mais a dépassé mes attentes. Je serai certainement une cliente fidèle !',
+  },
+];
+
+export const socialMedia = [
+  { src: facebook, alt: 'Facebook.', href: '#' },
+  { src: twitter, alt: 'Twitter', href: '#' },
+  { src: instagram, alt: 'Instagram', href: '#' },
+];
+
+export const footerLinks = [
+  {
+    title: 'Produits',
+    links: [
+      { name: 'Air Force', href: '#' },
+      { name: 'Air Max', href: '#' },
+      { name: 'Air Jordan', href: '#' },
+      { name: 'Nike Waffle Racer', href: '#' },
+      { name: 'Nike Cortez', href: '#' },
+    ],
+  },
+  {
+    title: 'Aide',
+    links: [
+      { name: 'À propos de nous', href: '#' },
+      { name: 'FAQs', href: '#' },
+      { name: 'Comment ça marche', href: '#' },
+      { name: 'Politique de confidentialité', href: '#' },
+      { name: 'Politique de paiement', href: '#' },
+    ],
+  },
+  {
+    title: 'Contactez-nous',
+    links: [
+      { name: 'contact@nike.com', href: '#' },
+      { name: '+123456789', href: 'tel:+123456789' },
+    ],
   },
 ];
