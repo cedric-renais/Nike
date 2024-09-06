@@ -20,13 +20,13 @@ const SpecialOffer = () => {
           <h2 className="font-palanquin text-4xl font-bold">
             Offre <span className="text-accent">Spéciale</span>
           </h2>
-          <p className="mt-4 font-montserrat text-lg leading-7 text-gray lg:max-w-3xl">
+          <p className="mt-4 text-lg leading-7 text-gray lg:max-w-3xl">
             Lancez-vous dans un voyage de shopping qui redéfinit votre
             expérience avec des offres imbattables. De nos sélections de premier
             choix aux économies incroyables, nous offrons une valeur inégalée
             qui nous distingue.
           </p>
-          <p className="mt-6 font-montserrat text-lg leading-7 text-gray lg:max-w-3xl">
+          <p className="mt-6 text-lg leading-7 text-gray lg:max-w-3xl">
             Explorez un univers de possibilités conçu pour satisfaire vos désirs
             uniques, dépassant les attentes les plus élevées. Votre voyage avec
             nous est tout simplement exceptionnel.

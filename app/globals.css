@@ -37,7 +37,7 @@
   }
 
   html {
-    @apply scroll-smooth bg-white text-black;
+    @apply scroll-smooth bg-white font-montserrat text-black;
   }
 }
 
@@ -54,8 +54,12 @@
     @apply border-accent bg-accent text-white outline-offset-8 outline-accent transition-colors hover:bg-white hover:text-accent;
   }
 
+  .button__red--sm {
+    @apply border-accent bg-accent text-white outline-offset-4 outline-accent transition-colors hover:bg-white hover:text-accent;
+  }
+
   .button__white {
-    @apply border-gray bg-white text-gray outline-offset-8 outline-accent transition-colors hover:bg-gray hover:text-white;
+    @apply border-gray bg-white text-gray outline-offset-8 outline-gray transition-colors hover:bg-gray hover:text-white;
   }
 }
 

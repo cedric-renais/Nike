@@ -21,7 +21,10 @@ const Navbar = () => {
   return (
     <header className="padding__x absolute z-20 w-full py-8">
       <nav className="max__wrapper flex items-center justify-between">
-        <Link className="rounded-md outline-offset-8 outline-accent" href="/">
+        <Link
+          className="rounded-full px-2 py-1 outline-offset-8 outline-accent"
+          href="/"
+        >
           <Image
             src={logoRed}
             alt="Nike, Accueil."
@@ -30,11 +33,11 @@ const Navbar = () => {
             priority
           />
         </Link>
-        <ul className="mr-8 flex flex-1 items-center justify-end gap-16 max-lg:hidden">
-          {navLinks.map((link) => (
-            <li key={link.label}>
+        <ul className="mr-8 flex flex-1 items-center justify-end gap-8 max-lg:hidden">
+          {navLinks.map((link, index) => (
+            <li key={index}>
               <Link
-                className="rounded-sm font-montserrat text-lg leading-normal text-gray underline-offset-2 outline-offset-8 outline-accent transition-colors hover:text-accent hover:underline"
+                className="flex__center rounded-full bg-gray px-8 py-4 text-white outline-offset-8 outline-accent transition-colors hover:bg-accent"
                 href={link.href}
               >
                 {link.label}
@@ -61,10 +64,10 @@ const Navbar = () => {
             className="absolute right-0 top-24 flex w-full flex-col gap-6 bg-accent px-8 py-8 lg:hidden"
             id="navigation"
           >
-            {navLinks.map((link) => (
-              <li key={link.label}>
+            {navLinks.map((link, index) => (
+              <li key={index}>
                 <Link
-                  className="flex-start rounded-sm font-montserrat text-lg leading-normal text-white outline-offset-8 outline-white"
+                  className="flex-start rounded-sm text-lg leading-normal text-white outline-offset-8 outline-white"
                   href={link.href}
                   onClick={closeMenu}
                 >

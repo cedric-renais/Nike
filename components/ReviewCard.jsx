@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
   return (
-    <div className="flex__center flex-col rounded-2xl bg-thumbnail bg-cover px-6 py-4">
+    <div className="flex__center flex-col rounded-2xl bg-thumbnail bg-cover px-6 py-4 shadow-lg">
       <Image
         className="mt-6 rounded-full object-cover"
         src={imgURL}
@@ -12,7 +12,7 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
         height={120}
         loading="lazy"
       />
-      <p className="mt-4 text-balance text-center font-montserrat text-lg leading-7">
+      <p className="mt-4 text-balance text-center text-lg leading-7">
         {feedback}
       </p>
       <div className="mt-4 flex gap-2">

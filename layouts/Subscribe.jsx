@@ -13,7 +13,7 @@ const Subscribe = () => {
             S'inscrire à la newsletters
           </label>
           <input
-            className="text-secondary max-sm:border-secondary border border-transparent bg-white pl-2 text-base leading-normal outline-offset-8 outline-accent max-sm:w-full max-sm:rounded-full max-sm:border-gray max-sm:py-3 max-sm:pl-3 sm:flex-1"
+            className="border border-transparent bg-white pl-2 text-base leading-normal text-gray outline-offset-8 outline-accent max-sm:w-full max-sm:rounded-full max-sm:border-gray max-sm:py-4 max-sm:pl-3 sm:flex-1"
             type="text"
             id="newsletter"
             placeholder="newsletters@nike.com"
@@ -22,7 +22,7 @@ const Subscribe = () => {
             <Button
               title="S'inscrire"
               type="submit"
-              variant="button__red"
+              variant="button__red--sm"
               full
             />
           </div>

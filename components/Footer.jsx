@@ -11,7 +11,10 @@ const Footer = () => {
       <div className="max__wrapper">
         <div className="flex flex-wrap items-start justify-between gap-20 max-lg:flex-col">
           <div className="flex flex-col items-start">
-            <Link href="#">
+            <Link
+              className="rounded-md outline-offset-8 outline-white"
+              href="#"
+            >
               <Image
                 src={logoWhite}
                 alt="Nike, retour à l'accueil"
@@ -19,14 +22,18 @@ const Footer = () => {
                 height={46}
               />
             </Link>
-            <p className="mt-6 font-montserrat leading-7 text-white sm:max-w-sm">
+            <p className="mt-6 leading-7 text-white sm:max-w-sm">
               Découvrez des chaussures idéales pour la nouvelle saison dans le
               magasin Nike le plus proche. Trouvez votre taille sur place et
               profitez de récompenses exclusives.
             </p>
             <div className="mt-8 flex items-center gap-5">
-              {socialMedia.map((icon) => (
-                <Link key={icon.src} href={icon.href}>
+              {socialMedia.map((icon, index) => (
+                <Link
+                  className="rounded-full outline-offset-4 outline-white"
+                  key={index}
+                  href={icon.href}
+                >
                   <div className="flex__center h-12 w-12 rounded-full bg-white">
                     <Image
                       src={icon.src}
@@ -40,16 +47,16 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-1 flex-wrap justify-between gap-20 lg:gap-10">
-            {footerLinks.map((section) => (
-              <div key={section.title}>
-                <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+            {footerLinks.map((section, index) => (
+              <div key={index}>
+                <h4 className="mb-6 text-2xl font-medium leading-normal text-white">
                   {section.title}
                 </h4>
                 <ul>
-                  {section.links.map((link) => (
-                    <li className="mt-3" key={link.name}>
+                  {section.links.map((link, index) => (
+                    <li className="mt-3" key={index}>
                       <Link
-                        className="font-montserrat text-base leading-normal text-white underline-offset-4 hover:underline"
+                        className="rounded-sm text-base leading-normal text-white underline-offset-4 outline-offset-8 outline-white hover:underline"
                         href={link.href}
                       >
                         {link.name}
@@ -61,15 +68,13 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="mt-24 flex justify-between text-white max-sm:flex-col max-sm:items-center">
-          <div className="justify- flex flex-1 items-center gap-2 font-montserrat">
-            <p className="font-montserrat">
-              © {date} Nike. Tous droits réservés.
-            </p>
+        <div className="mt-24 flex justify-between max-sm:flex-col max-sm:items-center">
+          <div className="flex flex-1 items-center gap-2">
+            <p className="text-white">© {date} Nike. Tous droits réservés.</p>
           </div>
           <Link
             href="#"
-            className="font-montserrat text-base leading-normal text-white underline-offset-4 hover:underline"
+            className="rounded-sm text-base leading-normal text-white underline-offset-4 outline-offset-8 outline-white hover:underline"
           >
             Conditions générales
           </Link>

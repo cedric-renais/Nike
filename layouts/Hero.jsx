@@ -21,15 +21,13 @@ const Hero = () => {
         id="home"
       >
         <div className="max-xl:padding__x relative flex w-full flex-col items-start justify-center pt-28 xl:w-2/5">
-          <p className="font-montserrat text-xl text-accent">
-            Nos collections d'été
-          </p>
-          <h1 className="z-10 mt-10 rounded-2xl pr-10 font-palanquin text-8xl font-bold max-sm:text-4xl max-sm:leading-[64px] xl:whitespace-nowrap xl:bg-white">
+          <p className="text-xl text-accent">Nos collections d'été</p>
+          <h1 className="z-10 mt-10 rounded-2xl pr-10 font-palanquin text-8xl font-bold max-sm:text-4xl max-sm:leading-[64px] xl:whitespace-nowrap">
             <span>Les nouvelles</span>
             <br />
             <span className="mt-3 inline-block text-accent">Nike</span> sont là.
           </h1>
-          <p className="mb-14 mt-6 font-montserrat text-lg leading-7 text-gray sm:max-w-sm">
+          <p className="mb-14 mt-6 text-lg leading-7 text-gray sm:max-w-sm">
             Découvrez les nouvelles baskets Nike, alliant confort de qualité et
             innovation pour votre vie active.
           </p>
@@ -40,14 +38,12 @@ const Hero = () => {
             variant="button__red"
           />
           <div className="mt-20 flex w-full flex-wrap items-start justify-start gap-16">
-            {statistics.map((stat) => (
-              <div key={stat.label}>
+            {statistics.map((stat, index) => (
+              <div key={index}>
                 <span className="font-palanquin text-4xl font-bold">
                   {stat.value}
                 </span>
-                <p className="font-montserrat leading-7 text-gray">
-                  {stat.label}
-                </p>
+                <p className="leading-7 text-gray">{stat.label}</p>
               </div>
             ))}
           </div>
