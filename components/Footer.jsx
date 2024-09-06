@@ -18,8 +18,8 @@ const Footer = () => {
               <Image
                 src={logoWhite}
                 alt="Nike, retour à l'accueil"
-                width={150}
-                height={46}
+                width={230}
+                height={48}
               />
             </Link>
             <p className="mt-6 leading-7 text-white sm:max-w-sm">
@@ -68,8 +68,8 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="mt-24 flex justify-between max-sm:flex-col max-sm:items-center">
-          <div className="flex flex-1 items-center gap-2">
+        <div className="mt-24 flex justify-between max-sm:flex-col">
+          <div className="flex flex-1 gap-2">
             <p className="text-white">© {date} Nike. Tous droits réservés.</p>
           </div>
           <Link
