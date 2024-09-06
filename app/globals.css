@@ -64,6 +64,10 @@
     @apply flex items-center justify-center;
   }
 
+  .padding {
+    @apply px-8 py-12 sm:px-16 sm:py-24;
+  }
+
   .padding__x {
     @apply px-8 sm:px-16;
   }

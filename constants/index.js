@@ -2,6 +2,10 @@ import {
   bigShoe1,
   bigShoe2,
   bigShoe3,
+  shoe1,
+  shoe2,
+  shoe3,
+  shoe4,
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
@@ -35,5 +39,36 @@ export const shoes = [
     thumbnail: thumbnailShoe3,
     bigShoe: bigShoe3,
     alt: 'baskets noires et bleues avec semelle noire et blanche.',
+  },
+];
+
+export const products = [
+  {
+    imgURL: shoe1,
+    rating: '4.7',
+    alt: 'baskets bordeaux et blanches.',
+    name: 'Nike Dunk Low',
+    price: '129,99€',
+  },
+  {
+    imgURL: shoe2,
+    alt: 'baskets noires avec des accents rouges.',
+    rating: '4.2',
+    name: 'Giannis Immortality 3',
+    price: '89,99€',
+  },
+  {
+    imgURL: shoe3,
+    rating: '4.9',
+    alt: 'baskets marron foncé.',
+    name: 'Nike Cortez Textile',
+    price: '89,99€',
+  },
+  {
+    imgURL: shoe4,
+    rating: '4.7',
+    alt: 'baskets gris olive.',
+    name: 'Nike Air Max 90',
+    price: '159,99€',
   },
 ];
