@@ -34,8 +34,24 @@ Ce projet a pour objectif de créer une interface web moderne et dynamique inspi
 - <b>Images</b> : Réduction de 89,56% du poids du dossier images
 - <b>Fonts</b> : Réduction de 61,93% du poids du dossier fonts
 
+#### Éco-index
+
+![Eco-index](./public/readme/ecoindex.webp)
+
+#### Lighthouse Desktop
+
+![Lighthouse Desktop](./public/readme/desktop.webp)
+
+- #### Lighthouse Mobile
+
+![Lighthouse Mobile](./public/readme/mobile.webp)
+
 ### Accessibilité
 
 - <b>Couleurs</b> : Choix de couleurs garantissant un score AAA en termes de contraste.
+
+#### Wave
+
+![wave](./public/readme/wave.webp)
 
 #
