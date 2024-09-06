@@ -53,6 +53,10 @@
   .button__red {
     @apply border-accent bg-accent text-white outline-offset-8 outline-accent transition-colors hover:bg-white hover:text-accent;
   }
+
+  .button__white {
+    @apply border-gray bg-white text-gray outline-offset-8 outline-accent transition-colors hover:bg-gray hover:text-white;
+  }
 }
 
 /**********************/
