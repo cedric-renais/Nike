@@ -5,6 +5,7 @@ import {
   PopularProducts,
   Services,
   SpecialOffer,
+  Subscribe,
   SuperQuality,
 } from '@layouts';
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Services />
       <SpecialOffer />
       <CustomerReviews />
+      <Subscribe />
     </>
   );
 };
