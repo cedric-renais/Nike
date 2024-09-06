@@ -5,7 +5,7 @@ const PopularProductCard = ({ imgURL, name, price, alt, rating }) => {
   return (
     <div className="max-sm:flex__center flex w-full flex-1 flex-col">
       <Image
-        className="w-full rounded-2xl transition-all hover:scale-105 hover:shadow-lg"
+        className="w-full rounded-2xl transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
         src={imgURL}
         alt={alt}
         width={282}

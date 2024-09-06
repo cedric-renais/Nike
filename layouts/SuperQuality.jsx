@@ -15,13 +15,13 @@ const SuperQuality = () => {
             <span className="text-accent"> des chaussures </span>
             de super qualité.
           </h2>
-          <p className="info-text mt-4 lg:max-w-lg">
+          <p className="mt-4 font-montserrat text-lg leading-7 text-gray lg:max-w-lg">
             En garantissant un confort et un style haut de gamme, nos chaussures
             méticuleusement conçues sont faites pour rehausser votre expérience,
             vous offrant une qualité inégalée, de l'innovation et une touche
             d'élégance.
           </p>
-          <p className="info-text mt-6 lg:max-w-lg">
+          <p className="mt-6 font-montserrat text-lg leading-7 text-gray lg:max-w-lg">
             Notre engagement envers le détail et l'excellence garantit votre
             satisfaction.
           </p>
@@ -33,7 +33,7 @@ const SuperQuality = () => {
             />
           </div>
         </div>
-        <div className="flex-center flex-1">
+        <div className="flex__center flex-1">
           <Image
             className="object-contain"
             src={shoe5}

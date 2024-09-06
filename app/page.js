@@ -1,5 +1,5 @@
 import { Navbar } from '@components';
-import { Hero, PopularProducts, SuperQuality } from '@layouts';
+import { Hero, PopularProducts, Services, SuperQuality } from '@layouts';
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Hero />
       <PopularProducts />
       <SuperQuality />
+      <Services />
     </>
   );
 };

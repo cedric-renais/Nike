@@ -1,3 +1,4 @@
+import { shield, support, truck } from '@public/assets/icons';
 import {
   bigShoe1,
   bigShoe2,
@@ -70,5 +71,25 @@ export const products = [
     alt: 'baskets gris olive.',
     name: 'Nike Air Max 90',
     price: '159,99€',
+  },
+];
+
+export const services = [
+  {
+    imgURL: truck,
+    title: 'Expédition gratuite',
+    subtext:
+      'Profitez d’une expérience de shopping fluide avec notre service de livraison gratuit.',
+  },
+  {
+    imgURL: shield,
+    title: 'Paiement sécurisé',
+    subtext:
+      'Effectuez vos transactions en toute tranquillité avec nos options de paiement sécurisé.',
+  },
+  {
+    imgURL: support,
+    title: 'Nous adorons vous aider',
+    subtext: 'Notre équipe dévouée est là pour vous assister à chaque étape.',
   },
 ];
